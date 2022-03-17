@@ -1,0 +1,10 @@
+version: '3'
+services:
+  mltest:
+    restart: always
+    build: .
+    container_name: 'mltest'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./opt:/root/opt
