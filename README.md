@@ -1,10 +1,10 @@
 # Test machine learning models
 
 ## Run
- `$ cd mltest/`
- `$ docker-compose up -d --build`
- `$ docker-compose exec mltest bash`
- `$ python opt/main.py`
+ `$ cd mltest/`  
+ `$ docker-compose up -d --build`  
+ `$ docker-compose exec mltest bash`  
+ `$ python opt/main.py`  
 
 ## Result
 |                  |  Normal  | CrossValidation |

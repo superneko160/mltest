@@ -54,7 +54,7 @@ def custom_conversion(dataframe):
     df = std_exclude(df)
     # 平均部屋数に対して平均寝室数を比較
     df['Bedrms_per_Rooms'] = df['AveBedrms'] / df['AveRooms']
-    df['Population_Feature'] = df['Population'].apply(category)  # categoryメソッドを属性Populationに適用
+    df['Population_Feature'] = df['Population'].apply(category)  # category関数を属性Populationに適用
     # カテゴリ属性をダミー変数化
     feature_dummies = pd.get_dummies(df['Population_Feature'], drop_first=True)
     df = pd.concat([df, feature_dummies], axis=1)
